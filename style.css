@@ -1,0 +1,137 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	color: #f1f1f1;
+	overflow: hidden;
+}
+
+header {
+	background-color: rgba(0, 0, 0, .7);
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.navbar ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	list-style: none;
+}
+
+.navbar ul li a {
+	padding: 15px;
+	display: block;
+	color: #f1f1f1;
+	text-decoration: none;
+	-webkit-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.navbar ul li a:hover {
+	background-color: #f1f1f1;
+	color: #000;
+}
+
+.scroll-sections {
+	height: 100vh;
+	width: 100%;
+	overflow-y: scroll;
+	/*	css scroll behavior */
+	scroll-behavior: smooth;
+	/*	scc scroll behavior */
+	/*	ccs scroll snapping*/
+	-webkit-scroll-snap-type: y mandatory;
+	-ms-scroll-snap-type: y mandatory;
+	scroll-snap-type: y mandatory;
+	/*	ccs scroll snapping */
+}
+
+section {
+	min-height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	/*	ccs scroll snapping */
+	scroll-snap-align: center;
+	/*	ccs scroll snapping */
+
+}
+
+section#home h1 {
+	font-size: 4rem;
+	text-transform: capitalize;
+	font-weight: 300;
+	margin-bottom: 2rem;
+}
+
+section h2 {
+	font-size: 2.6rem;
+	margin-bottom: 1.6rem;
+	font-weight: 300
+}
+
+section p {
+	font-size: 1.4rem;
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+section#home {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .4)), to(rgba(0, 0, 0, .2))), url(img/00.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), url(img/00.jpg);
+}
+
+section#eiffel-tower {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .4)), to(rgba(0, 0, 0, .2))), url(img/01.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), url(img/01.jpg);
+}
+
+section#louvre {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .4)), to(rgba(0, 0, 0, .2))), url(img/02.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), url(img/02.jpg);
+}
+
+section#moulin-rouge {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .4)), to(rgba(0, 0, 0, .2))), url(img/03.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), url(img/03.jpg);
+}
+
+section#notre-dame {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .4)), to(rgba(0, 0, 0, .2))), url(img/04.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), url(img/04.jpg);
+}
+
+section#arc-de-triomphe {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .4)), to(rgba(0, 0, 0, .2))), url(img/05.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), url(img/05.jpg);
+}
